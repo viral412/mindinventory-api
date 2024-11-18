@@ -19,9 +19,11 @@ API to Analyze User Intent and Generate Personalized Emails based on Website Int
    cd mindinventory-api
 
 2. **Build the Docker image:**
+   ```bash
    docker build -t mindinventory-api:python3.9 .
 
 3. **Run the Docker container:**
+   ```bash
    docker run -d -p 8000:8000 --name mindinventory-api mindinventory-api:python3.9
 
 4. **Access the API:**
