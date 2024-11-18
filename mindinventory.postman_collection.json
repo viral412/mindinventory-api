@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "98ab983b-4e4d-4e7c-9c92-dba33326a7cc",
+		"name": "mindinventory",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32634794"
+	},
+	"item": [
+		{
+			"name": "mindinventory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"user_name\": \"Jane Smith\",\n  \"user_urls\": [\n    \"https://www.mindinventory.com/hire-web-developers.php\",\n    \"https://www.mindinventory.com/hire-ai-developers.php\"\n  ],\n  \"user_message\": \"Looking for software engineering roles in New York.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/analyze-urls/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"analyze-urls",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
